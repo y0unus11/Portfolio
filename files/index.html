@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name – Cybersecurity Portfolio</title>
+<meta name="description" content="Portfolio of an aspiring security analyst: projects, skills and learning journey in cybersecurity.">
+<meta property="og:title" content="Your Name – Cybersecurity Portfolio">
+<meta property="og:type" content="website">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")==="light"?"light":"dark"}catch(e){document.documentElement.dataset.theme="dark"}</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main">
+  <a class="brand" href="#home" id="brand"></a>
+  <button id="theme" aria-pressed="false" title="Toggle light/dark mode"></button>
+  <button class="burger" aria-label="Open menu" aria-expanded="false" id="burger">☰</button>
+  <ul class="links" id="links">
+    <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li><li><a href="#certs">Certifications</a></li><li><a href="#contact">Contact</a></li>
+  </ul></nav></div></header>
+
+<main>
+<section id="home"><canvas id="net" aria-hidden="true"></canvas>
+<div class="wrap hero">
+  <div>
+    <h1 class="gold" id="name"></h1>
+    <p class="role" id="title"></p>
+    <p class="lead" id="intro"></p>
+    <div class="btns"><a class="btn pri" href="#projects">Explore my work</a><a class="btn sec" href="#contact">Contact me</a></div>
+  </div>
+  <div class="robotbox float">
+    <div class="bubble" id="hi" role="status">Hello, welcome to my portfolio!</div>
+    <svg viewBox="0 0 220 270" role="img" aria-label="Friendly white robot mascot with glowing blue eyes, waving hello" id="robot">
+      <defs>
+        <linearGradient id="w" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#cfd9e8"/></linearGradient>
+        <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <ellipse cx="110" cy="260" rx="58" ry="7" fill="#000" opacity=".28"/>
+      <rect x="78" y="188" width="26" height="46" rx="12" fill="url(#w)" stroke="#aebad0" stroke-width="1.5"/>
+      <rect x="116" y="188" width="26" height="46" rx="12" fill="url(#w)" stroke="#aebad0" stroke-width="1.5"/>
+      <rect x="76" y="226" width="30" height="7" rx="3" fill="#151a26"/><rect x="114" y="226" width="30" height="7" rx="3" fill="#151a26"/>
+      <rect x="68" y="232" width="42" height="22" rx="11" fill="url(#w)" stroke="#aebad0" stroke-width="1.5"/>
+      <rect x="112" y="232" width="42" height="22" rx="11" fill="url(#w)" stroke="#aebad0" stroke-width="1.5"/>
+      <g transform="rotate(8 58 140)"><rect x="48" y="138" width="20" height="52" rx="10" fill="url(#w)" stroke="#aebad0" stroke-width="1.5"/><circle cx="58" cy="196" r="9" fill="#151a26"/></g>
+      <g class="arm"><rect x="146" y="138" width="20" height="52" rx="10" fill="url(#w)" stroke="#aebad0" stroke-width="1.5"/><circle cx="156" cy="196" r="9" fill="#151a26"/></g>
+      <rect x="94" y="106" width="32" height="16" rx="6" fill="#151a26"/>
+      <rect x="68" y="118" width="84" height="76" rx="28" fill="url(#w)" stroke="#aebad0" stroke-width="1.5"/>
+      <rect x="88" y="168" width="44" height="16" rx="8" fill="#151a26"/>
+      <circle cx="110" cy="144" r="14" fill="#0a1630" stroke="#cfd9e8" stroke-width="2"/><circle cx="110" cy="144" r="8" fill="#4cc9ff" filter="url(#glow)"/>
+      <circle cx="64" cy="138" r="12" fill="#151a26"/><circle cx="156" cy="138" r="12" fill="#151a26"/>
+      <rect x="38" y="48" width="16" height="38" rx="8" fill="#151a26"/><circle cx="44" cy="67" r="4.5" fill="#4cc9ff" filter="url(#glow)"/>
+      <rect x="166" y="48" width="16" height="38" rx="8" fill="#151a26"/><circle cx="176" cy="67" r="4.5" fill="#4cc9ff" filter="url(#glow)"/>
+      <rect x="48" y="10" width="124" height="100" rx="48" fill="url(#w)" stroke="#aebad0" stroke-width="1.5"/>
+      <path d="M80 22q30-10 60 0" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" opacity=".9"/>
+      <rect x="60" y="30" width="100" height="62" rx="28" fill="#070b16"/>
+      <g class="eye"><ellipse class="pupil" cx="88" cy="62" rx="11" ry="14" fill="#4cc9ff" filter="url(#glow)"/></g>
+      <g class="eye"><ellipse class="pupil" cx="132" cy="62" rx="11" ry="14" fill="#4cc9ff" filter="url(#glow)"/></g>
+    </svg>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap reveal">
+  <h2>About me</h2><p class="lead">Edit these blocks in js/config.js.</p>
+  <div class="about" id="aboutGrid"></div></div></section>
+
+<section id="skills"><div class="wrap reveal">
+  <h2>Skills &amp; technologies</h2><p class="lead">Areas I’m studying and practising. No levels or claims, just what I’m working on.</p>
+  <div class="grid" id="skillGrid"></div></div></section>
+
+<section id="projects"><div class="wrap reveal">
+  <h2>Projects</h2><p class="lead">Hands-on work, added as I build it.</p>
+  <div class="grid" id="projGrid"></div>
+  <h3 style="margin-top:3rem;font-size:2rem">GitHub</h3>
+  <p class="lead" id="ghLine"></p>
+  <div class="btns"><a class="btn pri" id="ghBtn" target="_blank" rel="noopener">
+    <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.6 0 0 3.6 0 8c0 3.5 2.3 6.5 5.5 7.6.4.1.5-.2.5-.4v-1.4c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.200 1.900.9 2.300.7.1-.5.3-.9.5-1.100-1.800-.2-3.600-.9-3.600-4 0-.9.3-1.600.8-2.100-.1-.2-.4-1 .1-2.100 0 0 .7-.2 2.200.8a7.500 7.500 0 014 0c1.500-1 2.200-.8 2.200-.8.4 1.100.2 1.900.1 2.100.5.6.8 1.300.8 2.100 0 3.100-1.900 3.800-3.600 4 .3.3.6.800.6 1.500v2.200c0 .2.1.5.6.4A8 8 0 0016 8c0-4.400-3.600-8-8-8z"/></svg>
+    View my GitHub profile</a></div>
+  <div class="grid" id="repoGrid"></div></div></section>
+
+<section id="certs"><div class="wrap reveal">
+  <h2>Certifications &amp; learning</h2><p class="lead">Only earned credentials appear here.</p>
+  <div class="grid" id="certGrid"></div></div></section>
+
+<section id="contact"><div class="wrap reveal">
+  <h2>Contact me</h2><p class="lead">Recruiters and collaborators are welcome. Messages go straight to my inbox.</p>
+  <form id="form" novalidate>
+    <label>Name<input name="name" required autocomplete="name" maxlength="80"></label>
+    <label>Email<input name="email" type="email" required autocomplete="email" maxlength="120"></label>
+    <label>Subject<input name="subject" required maxlength="120"></label>
+    <label>Message<textarea name="message" rows="6" required maxlength="3000"></textarea></label>
+    <input class="hp" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn pri" type="submit" id="send">Send message</button>
+    <div id="status" role="status" aria-live="polite"></div>
+  </form>
+  <p class="lead" style="margin-top:1.5rem">Or write to <a id="mail" style="color:var(--gold2)"></a></p>
+</div></section>
+</main>
+
+<footer><div class="wrap"><p class="gold" style="font:700 1.6rem 'Cormorant Garamond',serif;margin:0" id="fbrand"></p>
+<p id="tag" style="margin:.3rem 0 1rem"></p>
+<p><a id="fgh" target="_blank" rel="noopener">GitHub</a> · <a href="#contact">Contact</a></p>
+<p style="font-size:.85rem" id="copy"></p></div></footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
